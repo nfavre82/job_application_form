@@ -24,14 +24,14 @@
                 <input class="name" type="text" id="name" placeholder="Enter your name (e.g. Alice White)">
 
 <!-- 4. Email -->
-                <label class="name" for="email">Email:</label>
+                <label class="email" for="email">Email:</label>
                 <input class="email" type="email" id="email" placeholder="Enter your email (e.g. alice.white@gmail.com)">
 
 <!-- 5. Selecting Job Position -->
                 <label class="position" for="position">Position:</label>
                 <select class="selector-position" name="position" id="position">
 
-                    <option>Select a position</option>
+                    <option class="position-presentation">Select a position</option>
 
                     <option value="front-end-dev">Front-End Web Developer</option>
 
@@ -50,20 +50,20 @@
 <!-- 6. Selecting Availability with radio buttons -->
                 <fieldset class="radio-group">
 
-                    <legend>Select Your Availability</legend>
-
+                    <legend class="legends-styling">Select Your Availability</legend>
+                    
                     <input type="radio" name="availability" id="full-time" value="Full-Time">
-                    <label for="full-time">Full-Time</label>
-
+                    <label class="radio-label" for="full-time">Full-Time</label>
+                    
                     <input type="radio" name="availability"
                     id="part-time"
                     value="Part-Time">
-                    <label for="Part-Time">Part-Time</label>
-
+                    <label class="radio-label" for="part-time">Part-Time</label>
+                    
                 </fieldset>
 
 <!-- 7. Motivation Text Area -->
-                <label for="message">Why do you want this position with us?</label>
+                <label class="legends-styling" for="message">Why do you want this position with us?</label>
                 <textarea id="message" placeholder="Write your motivation" rows="8" cols="50">
                 </textarea>
 

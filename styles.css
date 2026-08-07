@@ -41,12 +41,20 @@ input, label, legend {
     padding: 0.5em 0;
 }
 
+input, textarea {
+    background-color: #353839;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
 button {
+    background-color: #050301;
+    color: #FFFAFA;
     border-radius: 3px;
     padding: 0.5em;
     margin: 1em auto;
     text-transform: uppercase;
-    width: 100%;
+    width: 40%;
 }
 
 input.name, input.email, .selector-position {
@@ -60,20 +68,42 @@ fieldset, textarea {
     margin-bottom: 1.5em;
 }
 
+.legends-styling {
+    font-size: 20x;
+    font-weight: 800; 
+}
+
+.selector-position {
+    background-color: #353839;
+    color: whitesmoke;
+    font-size: 18px;
+   
+}
+
 label.name, label.email, label.position {
     color: #2E183B;
     font-weight: 800;
     text-transform: capitalize;
 }
 
+.radio-label {
+    margin-left: 0.15rem;
+    margin-right: 0.5rem;
+}
+
+
 /* PSEUDO-CLASSES*/
 
 input:first-of-type {
-    background-color: #E6E8FA;
+    background-color: #050301;
+    color: white;
+    opacity: 1;
+    font-size: 20px;
 }
 
 input:focus, textarea:focus {
     border: #1414e2 solid 2px;
+    outline: none;
 }
 
 input:valid, select:valid, textarea:valid {
@@ -84,19 +114,32 @@ input:invalid, select:invalid, textarea:invalid {
     border: red solid 2px;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: rgb(197, 196, 196);
+    font-size: 20px;
+    opacity: 1;
+}
+
+input[type="radio"] {
+    accent-color: #36454F;
+    width: 1em;
+    height: 1em; 
+    vertical-align: middle;
+}
+
 .radio-group input[type="radio"]:checked {
     border: #FFFAFA solid 2px; 
     background-color: midnightblue;
-    box-shadow: inset purple;
+    box-shadow: inset 0px 2px 3px #050301;
 }
 
 .radio-group input[type="radio"]:checked + label{
-    color: purple;
+    color: darkslategray;
 }
 
 button:hover {
-    background-color: #00040D;
-    color: #FFFAFA; 
+    background-color: #FFFAFA;
+    color: #050301;
 }
-
 
